@@ -12,4 +12,6 @@ class StoreItem
   end
 end
 
+item1 = StoreItem.new("apple", "red", 1.00)
 
+p item1
