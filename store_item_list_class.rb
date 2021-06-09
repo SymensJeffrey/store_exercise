@@ -15,9 +15,9 @@ class StoreItem
     @price = input_price    
   end
 
-  # def product
-  #   @product = product
-  # end
+  def product
+    @product
+  end
 
 end
 
@@ -34,10 +34,10 @@ price: 4.50
 )
 
 # CHANGE PRICE METHOD TEST
-# p item1
-# item1.change_price=(4.00)
+# p item2
+# item2.change_price=(10.00)
 # p "changing price"
-# p item1
+# p item2
 
-p item2 
+p item2.product 
 
