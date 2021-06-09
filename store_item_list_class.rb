@@ -5,6 +5,10 @@
 # ]
 
 class StoreItem
+
+  attr_reader :product, :color
+  # attr_writer :price, :location
+
   def initialize (options)
     @product = options[:product]
     @color = options[:color]
@@ -12,17 +16,17 @@ class StoreItem
     @location = options[:location]
   end
 
-  def change_price=(input_price)
-    @price = input_price    
-  end
+  # def change_price=(input_price)
+  #   @price = input_price    
+  # end
 
-  def product
-    @product
-  end
+  # def product
+  #   @product
+  # end
 
-  def color
-    @color
-  end
+  # def color
+  #   @color
+  # end
 
 
 end
@@ -54,7 +58,7 @@ location: "Isle 4"
 # p "changing price"
 # p item2
 
-p item2
+p item2.product
 
-p item3
+p item3.color
 
