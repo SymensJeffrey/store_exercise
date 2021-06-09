@@ -9,6 +9,7 @@ class StoreItem
     @product = options[:product]
     @color = options[:color]
     @price = options[:price]
+    @location = options[:location]
   end
 
   def change_price=(input_price)
@@ -29,19 +30,22 @@ end
 item1 = StoreItem.new(
 product: "apple",
 color: "red",
-price:1.00
+price:1.00,
+location: "Isle 7"
 )
 
 item2 = StoreItem.new(
 product: "oreos",
 color: "brown",
-price: 4.50
+price: 4.50,
+location: "Isle 4"
 )
 
 item3 = StoreItem.new(
 product: "goldfish",
 color: "gold",
 price: 2.75,
+location: "Isle 4"
 )
 
 # CHANGE PRICE METHOD TEST
@@ -50,7 +54,7 @@ price: 2.75,
 # p "changing price"
 # p item2
 
-p item2.color
+p item2
 
-p item3.color
+p item3
 
