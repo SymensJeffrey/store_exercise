@@ -7,7 +7,7 @@
 class StoreItem
 
   attr_reader :product, :color
-  # attr_writer :price, :location
+  attr_writer :price, :location
 
   def initialize (options)
     @product = options[:product]
@@ -53,12 +53,8 @@ location: "Isle 4"
 )
 
 # CHANGE PRICE METHOD TEST
-# p item2
-# item2.change_price=(10.00)
-# p "changing price"
-# p item2
-
-p item2.product
-
-p item3.color
+p item2
+item2.price=(10.00)
+p "changing price"
+p item2
 
