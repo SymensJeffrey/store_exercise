@@ -19,6 +19,11 @@ class StoreItem
     @product
   end
 
+  def color
+    @color
+  end
+
+
 end
 
 item1 = StoreItem.new(
@@ -45,7 +50,7 @@ price: 2.75,
 # p "changing price"
 # p item2
 
-p item2.product 
+p item2.color
 
-p item3
+p item3.color
 
