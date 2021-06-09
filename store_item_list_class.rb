@@ -33,6 +33,12 @@ color: "brown",
 price: 4.50
 )
 
+item3 = StoreItem.new(
+product: "goldfish",
+color: "gold",
+price: 2.75,
+)
+
 # CHANGE PRICE METHOD TEST
 # p item2
 # item2.change_price=(10.00)
@@ -40,4 +46,6 @@ price: 4.50
 # p item2
 
 p item2.product 
+
+p item3
 
