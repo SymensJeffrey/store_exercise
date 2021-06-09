@@ -10,8 +10,20 @@ class StoreItem
     @color = input_color
     @price = input_price
   end
+
+  # def print_item
+    
+  # end
+
+  def change_price=(input_price)
+    @price = input_price    
+  end
+
 end
 
 item1 = StoreItem.new("apple", "red", 1.00)
 
+p item1
+item1.change_price=(4.00)
+p "changing price"
 p item1
