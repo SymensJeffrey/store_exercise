@@ -53,8 +53,13 @@ location: "Isle 4"
 )
 
 # CHANGE PRICE METHOD TEST
-p item2
-item2.price=(10.00)
-p "changing price"
-p item2
+# p item2
+# item2.price=(10.00)
+# p "changing price"
+# p item2
+
+p item1
+item1.location=("Isle 10")
+p "changing location"
+p item1
 
